@@ -99,7 +99,7 @@
 		        </div>
 			</form>
 
-			<!-- Raised button with ripple -->
+			<!-- Calculate Button for SA and volume -->
 		        <button
 		          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
 		          onclick="calculate()">
@@ -115,3 +115,79 @@
 		</div>
 	</body>
 </html>
+
+			<!-- MDL Table -->
+	    	<main class="mdl-layout__content">
+		        <center><table>
+		          <tr>
+		            <th>
+		            	<!-- Radius Textfield -->
+						<br>
+						<form action="#">
+					        <h4>Radius of the base</h4>
+					        <div class="mdl-textfield mdl-js-textfield">
+					            <input
+					              class="mdl-textfield__input"
+					              type="text"
+					              pattern="-?[0-9]*(\.[0-9]+)?"
+					              id="radius-of-base"
+					            />
+					        	<label class="mdl-textfield__label" for="radius-of-base">Ex: 5</label>
+					            <span class="mdl-textfield__error">Input is not a number!</span>
+					        </div>
+						</form>
+		            </th>
+		            <th>
+		              <!-- Height Textfield -->
+			<br>
+			<form action="#">
+		        <h4>Height of the cone</h4>
+		        <div class="mdl-textfield mdl-js-textfield">
+		            <input
+		              class="mdl-textfield__input"
+		              type="text"
+		              pattern="-?[0-9]*(\.[0-9]+)?"
+		              id="height-of-cone"
+		            />
+		        	<label class="mdl-textfield__label" for="height-of-cone">Ex: 6.8</label>
+		            <span class="mdl-textfield__error">Input is not a number!</span>
+		        </div>
+			</form>
+		            </th>
+		          </tr>
+					<tr>
+						<th>
+							<!-- Slant Height Textfield -->
+			<br>
+			<form action="#">
+		        <h4>Slant Height of the cone</h4>
+		        <div class="mdl-textfield mdl-js-textfield">
+		            <input
+		              class="mdl-textfield__input"
+		              type="text"
+		              pattern="-?[0-9]*(\.[0-9]+)?"
+		              id="slant-height"
+		            />
+		        	<label class="mdl-textfield__label" for="slant-height">Ex: 7.6</label>
+		            <span class="mdl-textfield__error">Input is not a number!</span>
+		        </div>
+			</form>
+						</th>
+						<th>
+							<!-- Unit Textfield -->
+			<br>
+			<form action="#">
+		        <h4>Unit of measurement</h4>
+		        <div class="mdl-textfield mdl-js-textfield">
+		            <input
+		              class="mdl-textfield__input"
+		              type="text"
+		              pattern="-?[0-9]*(\.[0-9]+)?"
+		              id="unit-of-measurement"
+		            />
+		        	<label class="mdl-textfield__label" for="unit-of-measurement">Ex: cm</label>
+		            <span class="mdl-textfield__error">Input is not a number!</span>
+		        </div>
+			</form></th>
+					</tr>
+		        </table>
