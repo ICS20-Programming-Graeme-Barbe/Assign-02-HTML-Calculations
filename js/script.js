@@ -4,8 +4,7 @@
 
 
 // This function calculates the surface area and volume of a cone
-'use strict'
-function calculate() {
+function answer() {
 	// Declares variables 
 	let radius = parseFloat(document.getElementById('radius-of-base').value)
 	let height = parseFloat(document.getElementById('height-of-cone').value)
