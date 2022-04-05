@@ -8,7 +8,7 @@ function answer() {
 	// Declares variables 
 	let radius = parseFloat(document.getElementById('radius-of-base').value)
 	let height = parseFloat(document.getElementById('height-of-cone').value)
-	let unit = document.getElementById('unit').innerHTML
+	let unit = document.getElementById('unit').value
 	//Calulates SA and volume
 	let surfaceArea = Math.PI * radius * (radius + Math.sqrt(height ** 2 + radius ** 2))
 	let volume = 1 / 3 * (Math.PI * (radius **2)) * height
