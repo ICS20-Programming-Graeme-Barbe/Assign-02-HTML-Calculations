@@ -8,12 +8,11 @@ function answer() {
 	// Declares variables 
 	let radius = parseFloat(document.getElementById('radius-of-base').value)
 	let height = parseFloat(document.getElementById('height-of-cone').value)
-	let slantHeight = parseFloat(document.getElementById('slant-height').value)
-	let units = document.getElementById('unit-of-measurement').innerHTML
+	let unit = document.getElementById('unit').innerHTML
 	//Calulates SA and volume
-	let surfaceArea = Math.PI * (radius **2) + Math.PI * radius * slantHeight
+	let surfaceArea = Math.PI * radius * (radius + Math.sqrt(height ** 2 + radius ** 2))
 	let volume = 1 / 3 * (Math.PI * (radius **2)) * height
 	//Answers
 	document.getElementById('surface-area').innerHTML = 'The surface area is ' + surfaceArea.toFixed(2) + unit
-	document.getElementById('volume').innerHTML = 'The volume is ' + volume.toFixed(2) + units + "²"
+	document.getElementById('volume').innerHTML = 'The volume is ' + volume.toFixed(2) + unit + "²"
 }

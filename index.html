@@ -74,37 +74,17 @@
 							</form>
 		            	</th>
 		          	</tr>
-					<tr>
-						<th>
-							<!-- Slant Height Textfield -->
-							<br>
-							<form action="#">
-						        <h4>Slant Height of the cone</h4>
-						        <div class="mdl-textfield mdl-js-textfield">
-						            <input
-						              class="mdl-textfield__input"
-						              type="text"
-						              pattern="-?[0-9]*(\.[0-9]+)?"
-						              id="slant-height"
-						            />
-						        	<label class="mdl-textfield__label" for="slant-height">Ex: 7.6</label>
-						            <span class="mdl-textfield__error">Input is not a number!</span>
-						        </div>
-							</form>
-						</th>
-						<th>
-							<!-- Unit Textfield -->
-							<br>
-							<form action="#">
-								<h4>Unit of Measurement</h4>
-								<div class="mdl-textfield mdl-js-textfield">
-									<input class="mdl-textfield__input" type="text" id="unit-of-measurement">
-									<label class="mdl-textfield__label" for="unit-of-measurement">Ex: cm</label>
-								</div>
-							</form>
-						</th>
-					</tr>
 		        </table>
+
+				<!-- Unit Textfield -->
+				<br>
+				<form action="#">
+					<h4>Unit of Measurement</h4>
+					<div class="mdl-textfield mdl-js-textfield">
+						<input class="mdl-textfield__input" type="text" id="unit">
+						<label class="mdl-textfield__label" for="unit">Ex: cm</label>
+					</div>
+				</form>
 
 				<!-- Calculate Button for SA and volume -->
 				<br>
@@ -113,6 +93,8 @@
 		          onclick="answer()">
 		          Calculate
 		        </button>
+
+				<!-- Div for answers -->
 		        <br>
 		        <p>
 		          <div id="answers">
